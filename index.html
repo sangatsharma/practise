@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        background-color: black;
+      }
+      .container {
+        height: auto;
+        width: 90%;
+        border: 2px solid rgb(255, 254, 254);
+        display: grid;
+        margin: auto;
+        padding: 5px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 250px);
+        /* Adjust the width of each box */
+        grid-template-rows: repeat(3, 250px);
+        /* Adjust the height of each box */
+        gap: 6px;
+      }
+      .items {
+        border: 2px solid rgb(65, 64, 64);
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: ease-out 300ms;
+      }
+      .items > img {
+        height: 100%;
+        width: 100%;
+        transition: ease-out 300ms;
+        object-fit: cover;
+      }
+      .items :hover {
+        transform: scale(1.2);
+      }
+      /* Adjust for tablet devices */
+     @media (max-width: 768px) {
+         .container{
+        grid-template-columns: repeat(2, 225px);
+        /* Adjust the width of each box */
+        grid-template-rows: repeat(2, 225px);
+        /* Adjust the height of each box */
+
+        }
+        .items>img{
+            height: 225px;
+            width: 225px;
+        }
+       
+      }
+
+      /*  For mobile devices */
+      @media (max-width: 480px) {
+        .container{
+        grid-template-columns: repeat(1, 225px);
+        /* Adjust the width of each box */
+        grid-template-rows: repeat(1, 225px);
+        /* Adjust the height of each box */
+
+        }
+        .items>img{
+            height: 225px;
+            width: 225px;
+        }
+       
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items">
+        <img
+          src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
+        />
+      </div>
+      <div class="items">
+        <img
+          src="https://i.pinimg.com/originals/57/3c/cc/573cccb415e9a47e7647387a7ec74c44.jpg"
+        />
+      </div>
+      <div class="items">
+        <img
+          src="https://images.pexels.com/photos/6192127/pexels-photo-6192127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+      </div>
+      <div class="items">
+        <img
+          src="https://i.pinimg.com/originals/c4/99/86/c499868517768b66192393a823f47d50.jpg"
+        />
+      </div>
+      <div class="items">
+        <img
+          src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
+        />
+      </div>
+      <div class="items">
+        <img
+          src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
+        />
+      </div>
+      <div class="items">
+        <img
+          src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
+        />
+      </div>
+      <div class="items">
+        <img
+          src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
+        />
+      </div>
+      <div class="items">
+        <img
+          src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
+        />
+      </div>
+    </div>
+  </body>
+</html>

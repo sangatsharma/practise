@@ -3,6 +3,9 @@
   <head>
     <style>
       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         background-color: black;
       }
       .container {
@@ -11,13 +14,13 @@
         border: 2px solid rgb(255, 254, 254);
         display: grid;
         margin: auto;
-        padding: 5px;
         justify-content: center;
         grid-template-columns: repeat(3, 250px);
         /* Adjust the width of each box */
         grid-template-rows: repeat(3, 250px);
         /* Adjust the height of each box */
         gap: 6px;
+        padding: 5px;
       }
       .items {
         border: 2px solid rgb(65, 64, 64);
@@ -25,6 +28,7 @@
         overflow: hidden;
         cursor: pointer;
         transition: ease-out 300ms;
+        align-items: center;
       }
       .items > img {
         height: 100%;
@@ -42,10 +46,13 @@
           /* Adjust the width of each box */
           grid-template-rows: repeat(2, 225px);
           /* Adjust the height of each box */
+          
         }
+      
         .items > img {
-          height: 230px;
-          width: 230px;
+          height: 225px;
+          width: 225px;
+          object-fit: cover;
        
         }
       }
@@ -57,10 +64,16 @@
           /* Adjust the width of each box */
           grid-template-rows: repeat(1, 225px);
           /* Adjust the height of each box */
+          gap: 0px;
+        }
+        .items{
+          margin-top: 6px;
+        
         }
         .items > img {
-          height: 230px;
-          width: 230px;
+          height: 225px;
+          width: 225px;
+          object-fit: cover;
         }
    
       }
@@ -75,47 +88,47 @@
   <body><div><p>change2</p></div>
     <div class="container">
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
         />
       </div>
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://i.pinimg.com/originals/57/3c/cc/573cccb415e9a47e7647387a7ec74c44.jpg"
         />
       </div>
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://images.pexels.com/photos/6192127/pexels-photo-6192127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         />
       </div>
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://i.pinimg.com/originals/c4/99/86/c499868517768b66192393a823f47d50.jpg"
         />
       </div>
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
         />
       </div>
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
         />
       </div>
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
         />
       </div>
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
         />
       </div>
       <div class="items">
-        <img
+        <img alt="category image"
           src="https://t3.ftcdn.net/jpg/01/38/94/62/360_F_138946263_EtW7xPuHRJSfyl4rU2WeWmApJFYM0B84.jpg"
         />
       </div>
